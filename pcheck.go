@@ -15,10 +15,7 @@ import (
 func main() {
 	fmt.Printf("Pwned Passwords\nPwned Passwords are 555,278,657 real world passwords previously exposed in data breaches.\nLast update July 2019\n")
 
-	reader := bufio.NewReader(os.Stdin)
-	fmt.Print("Enter password to check if exposed: ")
-	text, _ := reader.ReadString('\r')
-	text = strings.Replace(text, "\r", "", -1)
+	text := os.Args[1]
 
 	h := sha1.New()
 	io.WriteString(h, text)
