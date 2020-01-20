@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bufio"
 	"crypto/sha1"
 	"encoding/hex"
 	"fmt"
@@ -53,6 +52,6 @@ func main() {
 	}
 
 	if !found {
-		fmt.Println("Lucky you, this password has not been found.")
+		fmt.Printf("Lucky you, the password %v has not been found.\n", text)
 	}
 }
