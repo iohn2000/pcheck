@@ -1,2 +1,2 @@
 # pcheck
-check your password against pwd database 
+check your password against pwd database.
